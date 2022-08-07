@@ -109,7 +109,7 @@ edgeSuppress = 1;
 [XvolumeFinal,settingRECON] = Reconstruction3D(LFpsf,LFpsft,LF_fp,Solver,maxIter,GPUON,edgeSuppress);
 
 write3d(255*mat2gray(XvolumeFinal),'results/Reconstruction3D.tif', bitdepth);
-save('results/Reconstruction3D.mat','XvolumeFinal','settingRECON');
+save('results/Reconstruction3D.mat','XvolumeFinal','LF_fp','rectified_stack','settingRECON');
 
 
 
